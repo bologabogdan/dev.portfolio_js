@@ -10,20 +10,36 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
+    "vue-gallery": "^2.0.1",
+    "vue-i18n": "^8.17.3",
+    "vue-page-transition": "^0.2.2",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
     "@vue/cli-plugin-router": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.2",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
-    "vue-template-compiler": "^2.6.11"
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "tailwindcss": "^1.2.0",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "eslintConfig": {
     "root": true,
@@ -39,6 +55,11 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "browserslist": [
     "> 1%",
