@@ -3,10 +3,19 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: {
+    index: { import: "./src/main.js", dependOn: "shared" },
+    another: { import: "./src/another-module.js", dependOn: "shared" },
+    shared: "lodash"
+  },
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js"
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
   },
   devServer: {
     contentBase: path.resolve(__dirname, "public")
@@ -35,29 +44,6 @@ module.exports = {
       vue$: "vue/dist/vue.js"
     },
     extensions: ["*", ".js", ".vue", ".json"]
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "async",
-      minSize: 30000,
-      minRemainingSize: 0,
-      maxSize: 0,
-      minChunks: 1,
-      maxAsyncRequests: 6,
-      maxInitialRequests: 4,
-      automaticNameDelimiter: "~",
-      cacheGroups: {
-        defaultVendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true
-        }
-      }
-    }
   },
   plugins: [new VueLoaderPlugin(), new CopyPlugin([{ from: "./public" }])]
 };
