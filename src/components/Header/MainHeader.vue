@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <div class="hidden lg:block xl:w-4/4 h-full">
+      <div class="hidden lg:block xl:w-full h-full">
         <img src="../../assets/background.png" alt="Background image" />
       </div>
     </div>

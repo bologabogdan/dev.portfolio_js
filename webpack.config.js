@@ -1,6 +1,8 @@
 const path = require("path");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const PreloadWebpackPlugin = require("preload-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -13,8 +15,15 @@ module.exports = {
     filename: "bundle.js"
   },
   optimization: {
+    runtimeChunk: "single",
     splitChunks: {
-      chunks: "all"
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all"
+        }
+      }
     }
   },
   devServer: {
@@ -45,5 +54,13 @@ module.exports = {
     },
     extensions: ["*", ".js", ".vue", ".json"]
   },
-  plugins: [new VueLoaderPlugin(), new CopyPlugin([{ from: "./public" }])]
+  plugins: [
+    new VueLoaderPlugin(),
+    new CopyPlugin([{ from: "./public" }]),
+    new HtmlWebpackPlugin(),
+    new PreloadWebpackPlugin({
+      rel: "preload",
+      include: "all"
+    })
+  ]
 };
