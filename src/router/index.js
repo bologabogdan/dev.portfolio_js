@@ -17,9 +17,13 @@ const RollUpPoster = () => import( /* webpackChunkName: "routes" */ '@/views/Por
 const SeiersBitters = () => import( /* webpackChunkName: "routes" */ '@/views/Portfolio/SeiersBittersPortfolio.vue')
 const Cyberboxx = () => import( /* webpackChunkName: "routes" */ '@/views/Portfolio/CyberboxxPortfolio.vue')
 const Pende = () => import( /* webpackChunkName: "routes" */ '@/views/Portfolio/PendePortfolio.vue')
+const NotFound = () => import( /* webpackChunkName: "routes" */ '@/views/404.vue')
 
 
 const router = new VueRouter({
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
@@ -40,7 +44,8 @@ const router = new VueRouter({
     { path: "/no-more-aps", beforeEnter() { window.open("https://nomorehours.com", "_blank"); } },
     { path: "/biblioteca-medgidia", beforeEnter() { window.open("http://des-iis.ucn.dk/mmdi0916/1062113/Website_FP/", "_blank"); } },
     { path: "/1000fryd", beforeEnter() { window.open("http://des-iis.ucn.dk/mmdi0916/1062050/Version2/1000FRYD/", "_blank"); } },
-    { path: "/github", beforeEnter() { window.open("https://github.com/bologabogdan?tab=repositories", "_blank"); } }
+    { path: "/github", beforeEnter() { window.open("https://github.com/bologabogdan?tab=repositories", "_blank"); } },
+    { path: '*', component: NotFound }
   ]
 });
 

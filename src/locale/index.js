@@ -9,6 +9,9 @@ const messages = {
       switchLocale: {
         switch: "Română"
       },
+      error: {
+        e404: "Oops! It seems like the page you are looking for can't be found. Try going back to the previous page or access the menu for more information."
+      },
       navigation: {
         home: "Home",
         about: "About",
@@ -215,6 +218,9 @@ const messages = {
     ro: {
       switchLocale: {
         switch: "English"
+      },
+      error: {
+        e404: "Oops! Nu am putut găsi pagina pe care o căutai. Încearcă să navighezi către pagina precedentă sau accesează o nouă pagină din meniu."
       },
       navigation: {
         home: "Acasă",

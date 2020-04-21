@@ -1,6 +1,6 @@
 <template>
   <div
-    class="nav w-full bg-white bottom-0 fixed z-40 shadow-inner"
+    class="nav w-full bg-white bottom-0 fixed z-40 border-t-2 border-gray-100"
     :class="{ 'nav-hidden': !showNavbar }"
   >
     <div class="text-center flex h-16 items-center justify-around">
@@ -10,7 +10,7 @@
           focusable="false"
           data-prefix="fas"
           data-icon="campground"
-          class="svg-inline--fa fa-campground w-5 h-5 mx-auto my-1"
+          class="svg-inline--fa fa-campground w-4 h-4 mx-auto my-1"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -29,7 +29,7 @@
           focusable="false"
           data-prefix="fas"
           data-icon="binoculars"
-          class="svg-inline--fa fa-binoculars w-5 h-5 mx-auto my-1"
+          class="svg-inline--fa fa-binoculars w-4 h-4 mx-auto my-1"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -48,7 +48,7 @@
           focusable="false"
           data-prefix="fas"
           data-icon="toolbox"
-          class="svg-inline--fa fa-toolbox w-5 h-5 mx-auto my-1"
+          class="svg-inline--fa fa-toolbox w-4 h-4 mx-auto my-1"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -67,7 +67,7 @@
           focusable="false"
           data-prefix="fas"
           data-icon="paper-plane"
-          class="svg-inline--fa fa-paper-plane w-5 h-5 mx-auto my-1"
+          class="svg-inline--fa fa-paper-plane w-4 h-4 mx-auto my-1"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
