@@ -31,8 +31,8 @@
           @click="images.index = imageIndex"
           :style="{
             backgroundImage: 'url(' + image + ')',
-            width: widthResize + 'px',
-            height: '250px'
+            width: '250px',
+            height: '200px'
           }"
         ></div>
       </div>
@@ -45,7 +45,6 @@ import VueGallery from "vue-gallery";
 import Alert from "@/components/UI/Alert.vue";
 
 export default {
-  name: "Work",
   components: {
     Alert,
     gallery: VueGallery
@@ -54,28 +53,6 @@ export default {
     allImages: {
       type: Object
     }
-  },
-  data: function() {
-    return {
-      widthResize: 300
-    };
-  },
-  methods: {
-    onResize() {
-      if (window.innerWidth >= 1280) {
-        this.widthResize = 400;
-      } else {
-        this.widthResize = 250;
-      }
-    }
-  },
-
-  created() {
-    window.addEventListener("resize", this.onResize);
-  },
-
-  beforeDestroy() {
-    window.removeEventListener("resize", this.onResize);
   }
 };
 </script>

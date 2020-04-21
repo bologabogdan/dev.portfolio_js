@@ -19,7 +19,7 @@
         ></path>
       </svg>
       <h1 class="text-6xl font-bold">404</h1>
-      <h2 class="lg:w-2/3 mx-auto">{{ $t("error.e404")}}</h2>
+      <h2 class="lg:w-2/3 mx-auto">{{ $t("error.e404") }}</h2>
     </div>
     <Footer></Footer>
   </div>
@@ -37,12 +37,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-</style>

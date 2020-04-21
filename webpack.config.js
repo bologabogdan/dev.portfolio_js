@@ -1,8 +1,8 @@
-const path = require("path");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const PreloadWebpackPlugin = require("preload-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: {
@@ -60,7 +60,7 @@ module.exports = {
     new HtmlWebpackPlugin(),
     new PreloadWebpackPlugin({
       rel: "preload",
-      include: "all"
+      as: "script"
     })
   ]
 };
