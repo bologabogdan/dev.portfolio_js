@@ -25,7 +25,11 @@ const messages = {
       },
       about: {
         title: "About Bogdan",
-        description: "An enthusiast of new technologies, web design and development, football and sneaker culture. Hard worker, a great team player and always ready for new challenges. Let me tell you more about me, my goals and my short-term and long-term objectives."
+        description: "An enthusiast of new technologies, web design and development, football and sneaker culture. Hard worker, a great team player and always ready for new challenges. Let me tell you more about me, my goals and my short-term and long-term objectives.",
+        1: {
+          title: "Introduction",
+          text: "My name is Bogdan-Marius Bologa. I was born and raised in Medgidia, Romania. I graduated the high school in 2016 in the same town. After finishing the high school I decided to continue my studies abroad in Denmark because I wanted to try something new and different from my education system back in Romania. I started my studies at University College Northern Denmark from Aalborg, at Multimedia Design programme. Here I put the basis of everything that describes digital product, from the process of research and analysis of the target group, to the process of sketching and designing prototypes, to implementation and testing. After two and a half years I had the opportunity to continue with another programme, Web Development, for receiving a full Bachelor's Degree. At this programme I acquired new information, knowledge and skills about web applications and database manipulation. I consider that these four years spent in another country were essential for my personal and professional development. It was a nice experience, but also different, where I learned that communication and group work are the most important factors in this domain. With all of these in mind, I decided to return to Romania and find a job as Front-End Developer or Web Designer. Yes, it's beautiful in other countries, but I consider that is better in your home country."
+       },
       },
       introduction: {
         title: "Get to know me better",
@@ -185,7 +189,7 @@ const messages = {
         resumeTextButton: "View resume",
         footerTitle: "Get in touch",
         footerText:
-          "You reached the bottom fo the page. If you don't find what you are looking for, feel free to contact me via email or phone and I will be happy to assist.",
+          "You reached the bottom of the page. If you don't find what you are looking for, feel free to contact me via email or phone and I will be happy to assist.",
         footerNavigation: "Quick access",
         footerSocial: "Follow me",
         footerCopyright: "Copyright © 2020 Bogdan Bologa. All rights reserved."
@@ -210,8 +214,7 @@ const messages = {
       alert: {
         galleryInfo: "Some images might not be displayed correctly. For a better overview of the images, use the desktop version or open them in another tab.",
         available: "At this moment I am available for any business inquiries. Don't hesitate to contact me through phone or e-mail if you want to chat."
-
-      }
+      },
     },
 
 
@@ -235,7 +238,12 @@ const messages = {
       },
       about: {
         title: "Despre Bogdan",
-        description: "Un pasionat al calculatoarelor si al design-ului. Iubesc fotbalul și colecționez adidași. Sunt o persoană muncitoare, îmi place să lucrez în echipă și sunt mereu pregătit pentru noi provocări."
+        description: "Un pasionat al calculatoarelor si al design-ului. Iubesc fotbalul și colecționez adidași. Sunt o persoană muncitoare, îmi place să lucrez în echipă și sunt mereu pregătit pentru noi provocări.",
+        1: {
+           title: "Introducere",
+           text: "Numele meu este Bologa Bogdan-Marius. Născut și crescut în municipiul Medgidia, am absolvit Liceul Teoretic Nicolae Bălcescu în anul 2016, profilul Matematică - Informatică. După terminarea liceului am decis să îmi continui studiile în Danemarca deorece voiam să încerc ceva nou și diferit față de sistemul de învățământ din România. Am început studiile la University College Northern Denmark din Aalborg, profilul Multimedia Design unde am pus bazele a tot ce înseamnă produs digital, de la procesul de căutare și analizare a grupului țintă, la crearea de schițe și prototipuri, până la implementarea în cod și testare. După doi ani și jumătate am avut opțiunea de a continua cu profilul Web Development pentru a putea primi diploma de licență. La acest profil am acumulat informații noi și avansate despre construirea de aplicații digitale și manipularea bazelor de date. Consider că acești patru ani petrecuți într-o instituție de învățământ din altă țară au fost esențiali în dezvoltarea mea personală și profesională. Pot să spun că a fost o experiență frumoasă și diferită, unde am învățat că lucrul în echipă și comunicarea sunt cele mai importante aspecte în acest domeniu. Cu toate acestea, am decis să mă întorc în România pentru a-mi găsi un loc de muncă ca și Front-End Developer sau Web Designer. Da, e frumos afară, dar mai frumos e la tine-n țară." 
+        },
+
       },
       introduction: {
         title: "Află mai multe despre mine",
@@ -419,9 +427,8 @@ const messages = {
       },
       alert: {
         galleryInfo: "Câteva imagini nu sunt afișate corect. Pentru o vizualizare mai bună a imaginilor, vă rugăm să folosiți varianta desktop sau să le deschideți într-o fereastră nouă.",
-        available: "În acest moment sunt deschis oricărei oferte de muncă. Nu ezita să ma contactezi prin telefon sau e-mail.",
-      }
-      
+        available: "În acest moment sunt deschis oricărei oferte de muncă. Nu ezita să mă contactezi prin telefon sau e-mail.",
+      },
     }
   };
 

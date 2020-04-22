@@ -45,6 +45,7 @@ const router = new VueRouter({
     { path: "/biblioteca-medgidia", beforeEnter() { window.open("http://des-iis.ucn.dk/mmdi0916/1062113/Website_FP/", "_blank"); } },
     { path: "/1000fryd", beforeEnter() { window.open("http://des-iis.ucn.dk/mmdi0916/1062050/Version2/1000FRYD/", "_blank"); } },
     { path: "/github", beforeEnter() { window.open("https://github.com/bologabogdan?tab=repositories", "_blank"); } },
+    { path: "/resume", beforeEnter() { window.open("", "_blank"); } },
     { path: '*', component: NotFound }
   ]
 });

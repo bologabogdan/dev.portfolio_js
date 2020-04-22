@@ -3,7 +3,7 @@
     <div class="max-w-6xl mx-auto w-full">
       <alert
         class="mt-0 mb-16"
-        backgroundColor="bg-orange-300"
+        backgroundColor="bg-orange-400"
         message="alert.galleryInfo"
       ></alert>
       <h2 class="text-2xl font-bold">{{ $t("gallery.title") }}</h2>

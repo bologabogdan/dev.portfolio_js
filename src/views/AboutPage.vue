@@ -6,6 +6,7 @@
       title="about.title"
       description="about.description"
     ></secondary-header>
+    <about-me></about-me>
     <education></education>
     <experience></experience>
     <other-experience></other-experience>
@@ -20,6 +21,7 @@ import SecondaryHeader from "@/components/Header/SecondaryHeader.vue";
 import Education from "@/components/Education.vue";
 import Experience from "@/components/Experience.vue";
 import OtherExperience from "@/components/OtherExperience.vue";
+import AboutMe from "@/components/AboutMe.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Education,
     Experience,
     OtherExperience,
+    AboutMe,
     Footer
   },
   props: {}

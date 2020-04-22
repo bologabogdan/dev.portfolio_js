@@ -8,7 +8,7 @@
     ></secondary-header>
     <div class="p-8 pb-0">
       <alert
-        backgroundColor="bg-green-300"
+        backgroundColor="bg-green-400"
         message="alert.available"
         class="max-w-6xl mx-auto mb-0"
       ></alert>

@@ -15,7 +15,7 @@
           <Button
             buttonStyle="white-outline"
             buttonText="footer.resumeTextButton"
-            buttonRoute="/"
+            buttonRoute="/resume"
           ></Button>
         </div>
       </div>
