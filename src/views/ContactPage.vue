@@ -10,7 +10,7 @@
       <alert
         backgroundColor="bg-green-400"
         message="alert.available"
-        class="max-w-6xl mx-auto mb-0"
+        class="max-w-6xl mx-auto lg:mb-0"
       ></alert>
     </div>
     <div class="lg:flex max-w-6xl mx-auto bg-gray-100 p-8 lg:p-0">
