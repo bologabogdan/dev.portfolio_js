@@ -35,7 +35,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "preload-webpack-plugin": "^2.3.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
